@@ -56,7 +56,7 @@ function draw() {
 
 function modelReady() {
   select('#modelStatusMessage').html('modelo cargado')
-  select('#modelStatusIndicator').elt.src = '/assets/check.svg'
+  select('#modelStatusIndicator').elt.src = 'assets/check.svg'
 
   isModelReady = true
   if (isVideoReady) {
@@ -69,7 +69,7 @@ function regressorReady() {
   resizeCanvas(VIDEO_SIZE, VIDEO_SIZE / aspectRatio)
   video.size(VIDEO_SIZE, VIDEO_SIZE / aspectRatio)
   select('#videoStatusMessage').html('webcam cargada')
-  select('#videoStatusIndicator').elt.src = '/assets/check.svg'
+  select('#videoStatusIndicator').elt.src = 'assets/check.svg'
 
   isVideoReady = true
   if (isModelReady) {
@@ -123,8 +123,8 @@ function setupButtons() {
     select('#stateCounter1').html('0 muestras')
     select('#stateCounter2').html('0 muestras')
     select('#train').html('Entrenar Modelo')
-    select('#modelStatusIndicator').elt.src = '/assets/error.svg'
-    select('#videoStatusIndicator').elt.src = '/assets/error.svg'
+    select('#modelStatusIndicator').elt.src = 'assets/error.svg'
+    select('#videoStatusIndicator').elt.src = 'assets/error.svg'
     initModel()
   })
 
