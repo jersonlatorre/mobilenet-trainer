@@ -1,0 +1,133 @@
+html {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  user-select: none;
+}
+
+button {
+  font-family: 'Karla', sans-serif;
+}
+
+#container {
+  width: 320px;
+}
+
+#modelStatusContainer,
+#videoStatusContainer {
+  display: flex;
+  align-items: center;
+}
+
+#modelStatusIndicator,
+#videoStatusIndicator {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+
+#videoContainer {
+  margin: 15px 0 5px 0;
+  width: 100%;
+  position: relative;
+}
+
+#flipButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#states {
+  display: flex;
+}
+
+/* ESTADOS */
+.state {
+  width: 50%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.state button {
+  border: none;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 95%;
+}
+
+.state .samples {
+  margin-top: 4px;
+}
+
+.state button:hover {
+  background-color: rgb(38, 157, 255);
+}
+
+.state button:active {
+  background-color: rgb(1, 117, 212);
+}
+
+/* ENTRENAMIENTO */
+#train {
+  background-color: rgb(1, 141, 54);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#train:hover {
+  background-color: rgb(0, 160, 61);
+}
+
+#train:active {
+  background-color: rgb(0, 129, 49);
+}
+
+#loss {
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
+}
+
+#reset {
+  background-color: white;
+  border: solid 1px red;
+  color: red;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.state button:focus,
+#train:focus,
+#reset:focus {
+  outline: 0;
+}
+
+.disabled {
+  background-color: #ccc !important;
+  pointer-events: none;
+}

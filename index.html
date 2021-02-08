@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>.</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Entrenamiento usando <br> MobileNet</h1>
+    <div id="modelStatusContainer">
+      <img id="modelStatusIndicator" src="/assets/error.svg">
+      <div id="modelStatusMessage">cargando modelo...</div>
+    </div>
+    <div id="videoStatusContainer">
+      <img id="videoStatusIndicator" src="/assets/error.svg">
+      <div id="videoStatusMessage">cargando webcam</div>
+    </div>
+    <div id="videoContainer">
+      <img id="flipButton" src="assets/flip.svg">
+    </div>
+    <div id="states">
+      <div class="state">
+        <button id="state1" class="disabled">Agregar estado 1</button>
+        <div id="stateCounter1" class="samples">0 muestras</div>
+      </div>
+      <div class="state">
+        <button id="state2" class="disabled">Agregar estado 2</button>
+        <div id="stateCounter2" class="samples">0 muestras</div>
+      </div>
+    </div>
+    <button id="train" class="disabled">Entrenar Modelo</button>
+    <button id="reset">Reiniciar Modelo</button>
+  </div>
+</body>
+
+</html>
